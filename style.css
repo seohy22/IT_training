@@ -61,11 +61,12 @@ header .icons .fa-search{
     text-align: center;
     background-color: #000;
 }
-.player video {
+.player .video {
     width: 100%;
-    height: 100px;
+    height: 100%;
     max-width: 1000px;
 }
+
 .metaInfo {
     padding: var(--padding);
 }
@@ -216,10 +217,78 @@ header .icons .fa-search{
     flex-direction: column;
 }
 
-@media screen and (min-width: 768px){
+/* @media screen and (min-width: 768px){
     .infoNupNext {
         flex-direction: row;
         margin: var(--padding);
     }
     
+} */
+
+.comment{
+    margin-top:10px;
+    margin-left:5px;
+}
+
+.comment .iam {
+    margin-top:10px;
+    margin-bottom: 20px;
+}
+.doComment .iam img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.doComment .iam #myComment {
+    height: 30px;
+    width: 93%;
+    border:none;
+    border-bottom: 1px solid #999;
+}
+.doComment .iam #myComment:focus{
+    outline:none;
+    border-bottom: 1px solid #000;
+}
+.comment .coItem img{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    margin-right:10px;
+}
+.comment .coItem {
+    display: flex;
+    margin-bottom:15px;
+}
+.coItem .pCommentSet{
+    display: flex;
+    flex-direction: column;
+}
+.coItem .pCommentSet span{
+    margin-bottom: 4px;
+}
+.coItem .pCommentSet .upNDown button,span{
+    margin-right:10px;
+}
+.coItem .pCommentSet .upNDown #comment2{
+    padding:0 5px 0 5px;
+}
+@media screen and (max-width:1000px){
+    .comment{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1000px){
+    .infoNupNext {
+        display: flex;
+        flex-direction: row;
+    }
+    .metaInfo{
+        max-width:800px;
+    }
+    .upNext img{
+        max-width:300px;
+    }
 }
